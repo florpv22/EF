@@ -1,5 +1,5 @@
 package com.example.dam_examen_final_pizango;
-
+import android.content.Intent;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
@@ -10,11 +10,21 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
+    Button btnLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnLogin = findViewById(R.id.buttonLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, NotasActivity.class);
+                startActivity(i);
+            }
+
+        });
+
         Button btn1 = findViewById(R.id.button2);
         btn1.setOnClickListener(view -> Toast.makeText(this, "Reuperar clave", Toast.LENGTH_SHORT).show());
 

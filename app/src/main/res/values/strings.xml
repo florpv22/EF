@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DAM_Examen_Final_Pizango</string>
+    <string name="password">Clave de internet</string>
+    <string name="buttonLogin">Ingresar</string>
+    <string name="buttonL">Olvidé mi clave de Internet</string>
+
+</resources>
